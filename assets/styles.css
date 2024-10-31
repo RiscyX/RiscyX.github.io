@@ -1,0 +1,208 @@
+:root {
+    --base-color: white;
+    --base-variant: #e8e9ed;
+    --text-color: #0d0d0d;
+    --secondary-text: #232738;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+    --shadow-color: #000000;
+}
+
+.dark-mode {
+    --base-color: #070b1d;
+    --base-variant: #101425;
+    --text-color: #ffffff;
+    --secondary-text: #a4a5b8;
+    --shadow-color: #ffffff;
+}
+#themeToggle{
+    height: 3rem;
+    width: 3rem;
+    padding: 0;
+    margin: 0 2.875rem;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#themeToggle svg{
+    fill: var(--shadow-color);
+}
+nav {
+    max-width: 100%;
+    height: 10vh;
+    background-color: var(--primary-color);
+    box-shadow: .188rem .188rem .313rem var(--shadow-color);
+}
+
+nav ul {
+    height: 100%;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav a {
+    font-size: 1.25rem;
+    height: 100%;
+    padding: 1rem 1.875rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: box-shadow 0.3s;
+}
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 60%;
+    margin-right: auto;
+    background-color: var(--primary-color);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+    transform: translateX(100%);
+    transition: transform 0.75s ease-in-out;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar li {
+    width: 100%;
+    padding: 1.25rem 0;
+}
+
+.sidebar a {
+    width: 100%;
+    padding: 1.25rem 3rem;
+    color: var(--text-color);
+    font-size: 1.75rem;
+}
+
+.menu-button {
+    display: none;
+}
+
+.sidebar li:first-child {
+    display: block;
+    position: absolute;
+    left: 1.25rem;
+    top: 0;
+}
+@media(min-device-width: 958px) {
+    nav li:hover{
+        background-color: var(--accent-color);
+    }
+    nav .logo:hover{
+        background-color: var(--primary-color);
+    }
+    nav .dark-mode-toggle:hover{
+        background-color: var(--primary-color);
+    }
+}
+@media (min-device-width: 801px) and (max-device-width: 957px) {
+    nav{
+        height: 12vh;
+    }
+}
+@media(max-width: 800px) {
+    #navbar {
+        position: fixed;
+        top: 0;
+        z-index: 990;
+        width: 100%;
+    }
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        position: absolute;
+        font-size: 2rem;
+        left: 0;
+    }
+
+    .close_sidebar {
+        display: block;
+        padding: 1.25rem 0;
+    }
+
+    #sidebar_active {
+        position: fixed;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 7.5vh);
+        background-color: rgba(0, 0, 0, 0.5);
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+        z-index: 998;
+    }
+
+    #sidebar_active.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #themeToggle svg {
+        fill: var(--shadow-color);
+    }
+
+    #themeToggleMobile {
+        height: 3rem;
+        width: 3rem;
+        padding: 0;
+        margin: 1.5rem 3.75rem;
+        border-radius: 50%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width: 450px) {
+        .sidebar {
+            width: 100%;
+        }
+        #navbar{
+            width: 100%;
+        }
+        #sidebar_active {
+            position: fixed;
+            top: 10vh;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 300ms ease-in-out;
+            z-index: 998;
+        }
+        #themeToggle svg {
+            fill: var(--shadow-color);
+        }
+    }
+}

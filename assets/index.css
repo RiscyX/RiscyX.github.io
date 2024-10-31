@@ -6,7 +6,8 @@ body {
     color: var(--text-color);
     width: 100%;
 }
-.content{
+
+.content {
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -14,24 +15,27 @@ body {
     align-items: start;
     margin-left: 2rem;
 }
-.top
-{
+
+.top {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
-.backButton{
+
+.backButton {
     display: flex;
     align-items: center;
     margin-top: 2.75rem;
 }
-body h1{
+
+body h1 {
     text-align: center;
     justify-items: center;
     align-items: center;
     margin-top: 4rem;
 }
-.mainpage{
+
+.mainpage {
     display: flex;
     flex-direction: column;
     place-items: center;
@@ -40,6 +44,7 @@ body h1{
     font-size: 1.5rem;
     color: var(--text-color);
 }
+
 .welcome {
     display: block;
     margin: 1.75rem auto .25rem;
@@ -50,66 +55,94 @@ body h1{
     text-align: center;
     width: fit-content;
 }
-.mainpage p{
-    margin-right: auto;
+
+.mainpage p {
+    margin: 1rem 2rem;
 }
-.mainpage h1{
+
+.mainpage h1 {
     margin: 3rem 0.5rem 0.5rem;
     padding: 0.5rem 0;
 }
-.date{
+
+.mainpage h2 {
+    margin-right: auto;
+    margin-left: 2rem;
+}
+ol{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+ol li{
+    margin: 0.5rem 2rem;
+}
+.date {
     font-size: 1.5em;
 }
-.backButton{
+
+.backButton {
     background-color: transparent;
     border: none;
     margin-right: auto;
     padding: 1rem 2rem;
+    fill: var(--shadow-color)
 }
-hr{
+
+hr {
     background-color: var(--text-color);
     width: 100%;
     height: 3px;
 }
-footer{
+
+footer {
     height: 4vh;
     margin: 1.5rem 0;
 }
-.mailto{
+
+.mailto {
     display: block;
     text-decoration: none;
     color: var(--text-color);
     text-align: center;
     font-size: 1.25rem;
 }
-@media (max-width: 600px){
-    .mainpage{
+
+@media (max-width: 600px) {
+    .mainpage {
         display: block;
         width: 100%;
         height: 100%;
         font-size: 1rem;
     }
-    .welcome{
+
+    .welcome {
         animation-duration: 7.5s;
     }
-    body{
+
+    body {
         width: 100vw;
     }
-    .top
-    {
+
+    .top {
         display: flex;
         align-items: center;
         gap: 0.5rem;
     }
-    .backButton{
+
+    .backButton {
         display: flex;
         align-items: center;
         margin-top: 6.5rem;
     }
-    body h1{
+
+    body h1 {
         margin-top: 7.5rem;
     }
-    .content{
+
+    .content {
         width: 90%;
         margin-left: 1rem;
         margin-right: 2rem;

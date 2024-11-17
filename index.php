@@ -23,7 +23,6 @@
     <div id="navbar"></div>
     <div class="animate__animated animate__fadeIn mainpage">
         <p class="welcome">Üdvözöllek az oldalamon!</p>
-        <h2 class="date"><?php echo "".date("Y.m.d")?></h2>
     </div>
     <hr>
 <script src="assets/themeToggle.js"></script>

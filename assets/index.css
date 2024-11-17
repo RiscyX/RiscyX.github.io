@@ -12,7 +12,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    margin-left: 2rem;
+    line-height: 1.6;
+}
+h2 a{
+    text-decoration: none;
+    color: var(--text-color);
+    border-bottom: .25rem solid var(--accent-color);
 }
 .top
 {
@@ -82,8 +87,50 @@ footer{
     text-align: center;
     font-size: 1.25rem;
 }
+.informations{
+    display: flex;
+    width: 90%;
+}
+.informations *{
+    width: 50%;
+    margin: 1rem auto;
+}
+.informations table{
+    width: fit-content;
+    border-collapse: separate;
+    border-spacing: 1rem;
+    border: .15rem solid var(--text-color);
+    margin-bottom: 2rem;
+}
+.informations th, .informations td {
+    padding: .5rem .5rem;
+    text-align: center;
+}
+.informations img{
+    margin: 2rem 2rem 2rem auto;
+    width: 15rem;
+    height: 15rem;
+}
+@media (max-device-width: 1200px)
+{
+    .informations{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .informations img{
+        margin: .5rem auto 1rem;
+    }
+}
+@media (min-device-width: 601px) and (max-device-width: 800px) {
+    .mainpage{
+        margin-top: 12vh;
+    }
+}
 @media (max-width: 600px){
     .mainpage{
+        margin-top: 12vh;
         display: block;
         width: 100%;
         height: 100%;
@@ -114,4 +161,17 @@ footer{
         margin-left: 1rem;
         margin-right: 2rem;
     }
+    .informations{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .informations *{
+        margin: .5rem 2rem;
+    }
+    table{
+
+    }
+
 }

@@ -106,10 +106,19 @@ footer{
     padding: .5rem .5rem;
     text-align: center;
 }
+.download:hover{
+    background-color: var(--secondary-text);
+    border-bottom: .5rem solid var(--accent-color);
+    color: var(--base-variant)
+}
 .informations img{
     margin: 2rem 2rem 2rem auto;
-    width: 15rem;
-    height: 15rem;
+    border-radius: 70% 30% 50% 10%;
+    border: .25rem solid var(--text-color);
+}
+.download a{
+    text-decoration: none;
+    color: var(--text-color);
 }
 @media (max-device-width: 1200px)
 {

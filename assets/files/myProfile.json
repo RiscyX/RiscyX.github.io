@@ -1,0 +1,21 @@
+{
+  "id": 0,
+  "name": "Vass Richárd",
+  "username": "26223071",
+  "email": "vassrichard31@gmail.com",
+  "address": {
+    "street": "Petőfi Sándor utca 80.",
+    "suite": "",
+    "city": "Novo Orahovo",
+    "zipcode": "24351",
+    "geo": { "lat": "45.8403316", "lng": "19.7517193" }
+  },
+  "phone": "+381 62 820 1856",
+  "website": "riscyx.github.io",
+  "picture" : "riscyx.github.io/assets/images/profilepic.jpg",
+  "company": {
+    "name": "Műszaki Szakfőiskola Szabadka",
+    "catchPhrase": "Olyan még nem volt, hogy ne lett volna sehogy.",
+    "bs": "Backend? :D"
+  }
+}
